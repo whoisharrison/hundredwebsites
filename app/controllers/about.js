@@ -7,8 +7,7 @@ export default Controller.extend({
     const delimiter = ","; 
     let i = parseFloat(amount);
     if(isNaN(i)) { return ''; }
-    const minus = '';
-    if(i < 0) { minus = '-'; }
+    const minus = i < 0 ? '-' : '';
     i = Math.abs(i);
     i = parseInt((i + .5));
 
